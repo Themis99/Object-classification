@@ -11,9 +11,10 @@ The dataset consist of images of five types of fruits and five types of househol
 | Sweet Peppers  | Telephone  |
 | Mushrooms  | Television  |
 
-Every class for both fruits and Household appliances were consist of 600 samples. 
+Εach class for both fruit and household appliances consists of 600 samples. The initial dataset is divided into a trainset where our models will be trained, a test set where the evaluation will be done, and a validation set where the validation will be done. All the different datasets are stratified meaning that there are an equal number of classes. Specifically for each class, 450 samples belong to the train set 50 to the test set and 100 to the validation set.
 
-We used the same model for all four cases. 
+# Model architecture
+We used the same model architecture for all cases. Specifically, the model consists of four 2D - convolutional layers of different dimensions with intermediate maxpooling layers. At the end there is a dense layer with dimension 512 followed by the output layer which uses softmax activations as a function. The dimension of the last layer changes depending on the number of classes we have in each case.
 
 
 
